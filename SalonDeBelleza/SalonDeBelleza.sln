@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalonDeBelleza.Web", "SalonDeBelleza.Web\SalonDeBelleza.Web.csproj", "{B0953E2B-E255-45D2-B471-B577CD4825B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalonDeBellesa.WebAdmin", "SalonDeBellesa.WebAdmin\SalonDeBellesa.WebAdmin.csproj", "{D8C45D9F-0E7E-410F-9271-9A94FCB6960C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalonDeBelleza.WebAdmin", "SalonDeBellesa.WebAdmin\SalonDeBelleza.WebAdmin.csproj", "{D8C45D9F-0E7E-410F-9271-9A94FCB6960C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalonDeBelleza.Win", "SalonDeBelleza.Win\SalonDeBelleza.Win.csproj", "{D5AA8534-E638-4E7D-9C6F-83E9FD7F2031}"
 EndProject

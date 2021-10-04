@@ -10,9 +10,9 @@ namespace SalonDeBelleza.BL
 {
     public class Contexto: DbContext
     {
-        public Contexto(): base(@"Data source=(LocalDb)\MSSQLLocalDB;AttachDBFilename=D:\L4\Proyecto\SalonDeBelleza\DB\SalonDeBellezaDB.mdf")
+        public Contexto(): base(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDBFilename=D:\L4\Proyecto\SalonDeBelleza\DB\SalonDeBellezaDB.mdf")
         {
-
+            
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

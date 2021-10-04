@@ -17,19 +17,10 @@ namespace SalonDeBelleza.Win
         {
             InitializeComponent();
             var productosBL = new ProductosBL();
-            var listadeProductos = productosBL.OdtenerProductos();
+            var listadeProductos = productosBL.ObtenerProductos();
 
             listadeProductosBindingSource.DataSource = listadeProductos;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bindingNavigatorMoveNextItem_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

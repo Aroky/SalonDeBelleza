@@ -13,7 +13,7 @@ namespace SalonDeBelleza.Web.Controllers
         public ActionResult Index()
         {
             var productosBL = new ProductosBL();
-            var listadeProductos = productosBL.OdtenerProductos();
+            var listadeProductos = productosBL.ObtenerProductos();
 
             return View(listadeProductos);
         }
