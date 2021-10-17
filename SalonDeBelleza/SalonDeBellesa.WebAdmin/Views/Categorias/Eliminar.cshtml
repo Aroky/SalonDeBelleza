@@ -4,29 +4,28 @@
     ViewBag.Title = "Eliminar";
 }
 
-<h2>Eliminar</h2>
+<h3>&iquest;Esta seguro que desea eliminar esta categoria?</h3>
+<div>
+    <h4>Categoria</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
 
-< h3 > & iquest ; Esta seguro que desea eliminar esta categoria? </ H3 >
-< div >
-    < h4 > Categoria </ h4 >
-    < h />
-    < dl  class = " dl-horizontal " >
-        < dt >
-@ Html.DisplayNameFor (modelo => modelo.Descripcion)
-        </ dt >
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
 
-        < dd >
-@ Html.DisplayFor (modelo => modelo.Descripcion)
-        </ dd >
+    </dl>
 
-    </ dl >
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
 
-@ usando ( Html . BeginForm ()) {
-@ Html.AntiForgeryToken ()
-
-        < div  class = " acciones de formulario sin color " >
-            < input  type = " submit "  value = " Delete "  class = " btn btn-default " /> |
-@ Html.ActionLink ( "Regresar a la lista", "Índice")
-        </ div >
+        <div class="form-actions no-color">
+            <input type="submit" value="Borrar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar a la lista", "Index")
+        </div>
     }
-</ div >
+</div>
