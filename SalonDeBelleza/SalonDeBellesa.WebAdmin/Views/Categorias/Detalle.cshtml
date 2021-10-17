@@ -1,0 +1,26 @@
+﻿@model SalonDeBelleza.BL.Categoria
+
+@{
+    ViewBag.Title = "Detalle";
+}
+
+<h2>Detalle</h2>
+
+< div >
+    < h4 > Categoria </ h4 >
+    < h />
+    < dl  class = " dl-horizontal " >
+        < dt >
+@ Html.DisplayNameFor (modelo => modelo.Descripcion)
+        </ dt >
+
+        < dd >
+@ Html.DisplayFor (modelo => modelo.Descripcion)
+        </ dd >
+
+    </ dl >
+</ div >
+< p >
+@ Html.ActionLink ( "Editar", "Editar", nuevo {  id  =  Model . Id  } ) |
+@ Html.ActionLink ( "Regresar a la lista", "Índice")
+</ p >
