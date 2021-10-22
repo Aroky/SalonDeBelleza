@@ -13,22 +13,24 @@ namespace SalonDeBelleza.BL
         {
             Activo = true;
         }
+
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Ingrese la descripción")]
-        [MinLength(3, ErrorMessage = "Ingrese mínimo 3 caracteres")]
-        [MaxLength(20, ErrorMessage = "No se permiten más de 20 caracteres")]
+        [Display(Name = "Descripcion")]
+        [Required(ErrorMessage = "Ingrese la descripcion")]
+        [MinLength(3, ErrorMessage = "Ingrese  minimo 3 caracteres")]
+        [MaxLength(20,ErrorMessage = "Ingrese un maximo de 20 caracteres")]
         public string Descripcion { get; set; }
 
-        [Required(ErrorMessage = "Ingrese precio")]
-        [Range(0, 2000, ErrorMessage = "Ingrese un precio entre 0 y 2000")]
+        [Required(ErrorMessage = "Ingrese el precio")]
+        [Range(0,3000, ErrorMessage = "Ingrese un precio entre 0 y 3000")]
         public double Precio { get; set; }
         public int CategoriaId { get; set; }
         public Categoria Categoria { get; set; }
 
         [Display(Name = "Imagen")]
         public string UrlImagen { get; set; }
-
         public bool Activo { get; set; }
+
     }
 }

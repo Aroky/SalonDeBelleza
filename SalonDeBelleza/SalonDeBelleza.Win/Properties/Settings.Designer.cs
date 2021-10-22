@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SalonDeBelleza.Win.Properties
+namespace SalondeBelleza.Win.Properties
 {
 
 

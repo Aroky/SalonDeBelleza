@@ -10,12 +10,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B0953E2B-E255-45D2-B471-B577CD4825B3}</ProjectGuid>
+    <ProjectGuid>{C7903543-0078-413D-B7BA-A4E95652F064}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SalonDeBelleza.Web</RootNamespace>
-    <AssemblyName>SalonDeBelleza.Web</AssemblyName>
+    <RootNamespace>SalondeBelleza.web</RootNamespace>
+    <AssemblyName>SalondeBelleza.web</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -140,6 +140,7 @@
     <Content Include="scripts\jquery-1.10.2.min.js" />
     <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
+    <Content Include="Views\Productos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -163,7 +164,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Productos\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -177,7 +177,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SalonDeBelleza.BL\SalonDeBelleza.BL.csproj">
-      <Project>{d6d9af61-5a7a-423e-ae80-9251041123dc}</Project>
+      <Project>{cdb5ec13-9140-4422-ba53-2eea695b9b1a}</Project>
       <Name>SalonDeBelleza.BL</Name>
     </ProjectReference>
   </ItemGroup>
@@ -194,9 +194,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>59138</DevelopmentServerPort>
+          <DevelopmentServerPort>62584</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:58320/</IISUrl>
+          <IISUrl>http://localhost:62584/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

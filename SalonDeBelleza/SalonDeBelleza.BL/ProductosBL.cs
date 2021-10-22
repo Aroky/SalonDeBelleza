@@ -9,6 +9,7 @@ namespace SalonDeBelleza.BL
     public class ProductosBL
     {
         Contexto _contexto;
+
         public List<Producto> ListadeProductos { get; set; }
 
         public ProductosBL()
@@ -17,41 +18,49 @@ namespace SalonDeBelleza.BL
             ListadeProductos = new List<Producto>();
         }
 
-        public List<Producto> ObtenerProductos()
+
+        public  List<Producto> ObtenerProductos()
         {
             ListadeProductos = _contexto.Productos
-                .Include("Categoria")
-                .ToList();
+             .Include("Categoria")
+             .ToList();
 
             return ListadeProductos;
         }
 
-        public void GuardarProducto(Producto producto)
+      public void  GuardarProducto(Producto producto)
         {
             if (producto.Id == 0)
             {
                 _contexto.Productos.Add(producto);
-            }
-            else
+            } else
             {
                 var productoExistente = _contexto.Productos.Find(producto.Id);
+
+
                 productoExistente.Descripcion = producto.Descripcion;
                 productoExistente.CategoriaId = producto.CategoriaId;
                 productoExistente.Precio = producto.Precio;
                 productoExistente.UrlImagen = producto.UrlImagen;
+
             }
-            _contexto.SaveChanges();    
+
+            _contexto.SaveChanges();
         }
 
         public Producto ObtenerProducto(int id)
         {
-            var producto = _contexto.Productos.Include("Categoria").FirstOrDefault(p => p.Id == id);
+            var producto = _contexto.Productos
+                .Include("Categoria").FirstOrDefault(p => p.Id == id);
+
             return producto;
         }
 
         public void EliminarProducto(int id)
         {
+
             var producto = _contexto.Productos.Find(id);
+
             _contexto.Productos.Remove(producto);
             _contexto.SaveChanges();
         }

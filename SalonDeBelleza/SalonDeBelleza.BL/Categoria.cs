@@ -11,7 +11,7 @@ namespace SalonDeBelleza.BL
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Ingrese la categoria")]
+        [ Required (ErrorMessage = "Ingrese la categoria")]
         public string Descripcion { get; set; }
     }
 }
