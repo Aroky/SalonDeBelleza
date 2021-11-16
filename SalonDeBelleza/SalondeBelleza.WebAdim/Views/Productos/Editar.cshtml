@@ -10,7 +10,7 @@
 {
     @Html.AntiForgeryToken()
     
-    <div class="form-horizontal">
+    <! class="form-horizontal">
         <h4>Producto</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
@@ -31,7 +31,7 @@
                 @Html.ValidationMessageFor(model => model.Categoria, "", new { @class = "text-danger" })
             </div>
         </div>
-
+        <!–– Para las imagenes copiar las necesarias––>
         <div class="form-group">
             <label class="control-label col-md-2">Seleccionar Imagen</label>
             <div class="col-md-2">
@@ -41,7 +41,7 @@
                 <img src="@Model.UrlImagen" alt="@Model.Descripcion" style="width:200px; height:auto;" />
             </div>
         </div>
-
+        <!–– Fin Para las imagenes copiar las necesarias––>
         <div class="form-group">
             @Html.LabelFor(model => model.Precio, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -55,7 +55,7 @@
                 <input type="submit" value="Save" class="btn btn-default" />
             </div>
         </div>
-    </div>
+   
 }
 
 <div>

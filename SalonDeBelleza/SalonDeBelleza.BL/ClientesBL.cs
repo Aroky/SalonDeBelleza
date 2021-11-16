@@ -50,7 +50,10 @@ namespace SalonDeBelleza.BL
                 clienteExistente.Nombre = cliente.Nombre;
                 clienteExistente.Telefono = cliente.Telefono;
                 clienteExistente.Direccion = cliente.Direccion;
+                clienteExistente.Rtn = cliente.Rtn;
+                clienteExistente.Identidad = cliente.Identidad;
                 clienteExistente.Activo = cliente.Activo;
+
             }
 
             _contexto.SaveChanges();

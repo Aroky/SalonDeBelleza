@@ -30,7 +30,6 @@ namespace SalonDeBelleza.BL
             return ListadeProductos;
         }
 
-
         public List<Producto> ObtenerProductosActivos()
         {
             ListadeProductos = _contexto.Productos
@@ -38,9 +37,9 @@ namespace SalonDeBelleza.BL
              .Where(r => r.Activo == true)
              .OrderBy(r => r.Descripcion)
              .ToList();
-
             return ListadeProductos;
         }
+
         public void  GuardarProducto(Producto producto)
         {
             if (producto.Id == 0)
@@ -50,12 +49,15 @@ namespace SalonDeBelleza.BL
             {
                 var productoExistente = _contexto.Productos.Find(producto.Id);
 
-
                 productoExistente.Descripcion = producto.Descripcion;
                 productoExistente.CategoriaId = producto.CategoriaId;
                 productoExistente.Precio = producto.Precio;
                 productoExistente.UrlImagen = producto.UrlImagen;
-
+                productoExistente.UrlImagen = producto.UrlImagen;
+                productoExistente.UrlImagen = producto.UrlImagen;
+                productoExistente.UrlImagen = producto.UrlImagen;
+                
+               
             }
 
             _contexto.SaveChanges();

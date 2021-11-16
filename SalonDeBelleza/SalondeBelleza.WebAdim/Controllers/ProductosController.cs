@@ -30,8 +30,7 @@ namespace SalondeBelleza.WebAdmin.Controllers
             var nuevoProducto = new Producto();
             var categorias = _categoriasBL.ObtenerCategorias();
 
-            ViewBag.CategoriaId = 
-               new SelectList(categorias, "Id", "Descripcion");
+            ViewBag.CategoriaId =  new SelectList(categorias, "Id", "Descripcion");
 
             return View(nuevoProducto);
         }
@@ -91,8 +90,6 @@ namespace SalondeBelleza.WebAdmin.Controllers
                     producto.UrlImagen = GuardarImagen(imagen);
                 }
                 _productosBL.GuardarProducto(producto);
-
-
                 return RedirectToAction("Index");
             }
 

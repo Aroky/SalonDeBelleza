@@ -44,15 +44,12 @@ namespace SalonDeBelleza.BL
         public Categoria ObtenerCategoria(int Id)
         {
             var categoria = _contexto.Categorias.Find(Id);
-
             return categoria;
         }
 
         public void EliminarCategoria(int id)
         {
-
             var categoria = _contexto.Categorias.Find(id);
-
             _contexto.Categorias.Remove(categoria);
             _contexto.SaveChanges();
         }
